@@ -73,16 +73,16 @@ a:hover { text-decoration-thickness: 2px; }
 .small { font-size: 0.92rem; color: var(--ink-soft); }
 
 /* ---------- header ---------- */
-.site-header { background: var(--paper); border-bottom: 1px solid #e4dccd; }
-.header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 2rem; padding-top: 0.75rem; padding-bottom: 0.75rem; }
-.wordmark { display: flex; align-items: center; gap: 0.65rem; color: var(--ink); text-decoration: none; font-family: var(--serif); font-size: 1.1rem; line-height: 1.2; }
-.wordmark img { border-radius: 50%; flex: none; }
-.site-header nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
-.site-header nav a { color: var(--ink); text-decoration: none; font-size: 0.97rem; padding: 0.35rem 0; display: inline-block; border-bottom: 1px solid transparent; }
-.site-header nav a:hover { border-bottom-color: var(--brass); }
+/* The nav sits quietly at the top of the green band, part of the opening. */
+.site-header { background: var(--green); color: var(--on-green); }
+.header-inner { padding-top: 1rem; }
+.site-header nav { border-bottom: 1px solid rgba(251, 248, 242, 0.3); padding-bottom: 0.6rem; }
+.site-header nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.15rem 1.5rem; }
+.site-header nav a { color: var(--on-green); opacity: 0.88; text-decoration: none; font-size: 0.95rem; padding: 0.3rem 0; display: inline-block; border-bottom: 1px solid transparent; }
+.site-header nav a:hover { opacity: 1; border-bottom-color: currentColor; }
 
 /* ---------- intro (green, like the meditation flier) ---------- */
-.intro { background: var(--green); color: var(--on-green); padding: 3.5rem 0 3rem; }
+.intro { background: var(--green); color: var(--on-green); padding: 2.75rem 0 3rem; }
 .intro h1 { max-width: 14ch; margin-bottom: 0.4em; }
 .kicker { font-size: 0.95rem; letter-spacing: 0.02em; opacity: 0.9; margin-bottom: 1.25rem; }
 .lede { font-family: var(--serif); font-size: clamp(1.25rem, 2.6vw, 1.55rem); line-height: 1.4; max-width: 34ch; margin: 0; }
@@ -148,7 +148,6 @@ address .small { font-family: var(--sans); }
 .site-footer { background: var(--ink); color: #eae4d8; padding: 2.5rem 0 3rem; }
 .site-footer a { color: #fff; }
 .site-footer .small { color: #c9c2b4; }
-.footer-name { font-family: var(--serif); font-style: italic; font-size: 1.35rem; }
 
 /* focus ring on dark green and ink backgrounds */
-.intro :focus-visible, .green :focus-visible, .site-footer :focus-visible { outline-color: var(--on-green); }
+.site-header :focus-visible, .intro :focus-visible, .green :focus-visible, .site-footer :focus-visible { outline-color: var(--on-green); }
