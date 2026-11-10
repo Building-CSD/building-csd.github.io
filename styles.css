@@ -84,7 +84,6 @@ a:hover { text-decoration-thickness: 2px; }
 /* ---------- intro (green, like the meditation flier) ---------- */
 .intro { background: var(--green); color: var(--on-green); padding: 2.75rem 0 3rem; }
 .intro h1 { max-width: 14ch; margin-bottom: 0.4em; }
-.kicker { font-size: 0.95rem; letter-spacing: 0.02em; opacity: 0.9; margin-bottom: 1.25rem; }
 .lede { font-family: var(--serif); font-size: clamp(1.25rem, 2.6vw, 1.55rem); line-height: 1.4; max-width: 34ch; margin: 0; }
 .intro .lede { border-top: 1px solid rgba(251, 248, 242, 0.55); padding-top: 1.1rem; }
 
@@ -127,11 +126,13 @@ a:hover { text-decoration-thickness: 2px; }
 .photo img { max-width: 22rem; width: 100%; }
 
 .green { background: var(--green); color: var(--on-green); border-top: none !important; }
-.green a, .link-light { color: var(--on-green); }
+.green a { color: var(--on-green); }
 .green .slot { border-top: 1px solid rgba(251, 248, 242, 0.45); padding-top: 0.25rem; margin-top: 1.5rem; }
 .green .slot h3 { font-style: italic; margin-top: 0.75rem; margin-bottom: 0.35rem; }
+.green .contact { font-size: 0.95rem; opacity: 0.92; }
+.slots { display: grid; gap: 0 3rem; }
+@media (min-width: 52rem) { .wrap.prose > .slots { max-width: 52rem; grid-template-columns: 1fr 1fr; } }
 .note { font-style: normal; font-family: var(--sans); font-size: 0.95rem; opacity: 0.9; white-space: nowrap; }
-.flier-small img { max-width: 22rem; width: 100%; border: 1px solid rgba(251, 248, 242, 0.35); }
 
 .parchment { background: var(--parchment-light); }
 
