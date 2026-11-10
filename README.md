@@ -8,7 +8,8 @@ A single page made with plain HTML and CSS. There's no build step, so whatever y
 
 1. On GitHub, open `index.html` and click the pencil icon (Edit).
 2. Each section starts with a comment you can search for (Cmd/Ctrl+F):
-   `INTRO`, `EVENT BLOCK`, `ABOUT`, `VISION`, `SAMPLE WEEK`, `WEEKLY MEDITATION`, `USE THE SPACE`, `SUPPORT`, `GET INVOLVED`, `VISIT`.
+   `INTRO`, `EVENT BLOCK`, `WEEKLY MEDITATION`, `GET INVOLVED`, `ABOUT`, `VISIT`.
+   The vision, the building, the sample week and fundraising are on a second page, `vision.html`, edited the same way.
 3. Change only the words between tags, such as `<p>` ... `</p>`. Leave the angle-bracket parts alone.
 4. Click **Commit changes**. The live site updates in about a minute.
 
