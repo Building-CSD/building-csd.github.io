@@ -142,7 +142,6 @@ ul.plain li::marker { color: var(--brass); }
 address { font-style: normal; font-family: var(--serif); font-size: 1.3rem; line-height: 1.45; margin-bottom: 1rem; }
 address .small { font-family: var(--sans); }
 
-.todo { font-size: 0.92rem; color: #6b4c12; background: #fbf1d9; border: 1px dashed #c9a656; padding: 0.4rem 0.7rem; display: inline-block; margin-right: 0.5rem; }
 
 /* ---------- footer ---------- */
 .site-footer { background: var(--ink); color: #eae4d8; padding: 2.5rem 0 3rem; }

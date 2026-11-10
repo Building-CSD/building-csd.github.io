@@ -28,10 +28,9 @@ Everything for the event sits between `EVENT BLOCK` and `END EVENT BLOCK` in `in
 
 Also update the event text in the `og:description` line near the top. That's the text that shows in link previews on iMessage, Slack and similar apps.
 
-## Still to do (TODO)
+## Optional later
 
-- Open hours and accessibility details. These show as yellow "TODO" notes in the Visit section; delete each `<p class="todo">` line once the real text is in.
-- Photos of the building. See the TODO comment in the About section.
+- Photos of the building: there's a spot marked in the About section.
 - The flier PDFs in `images/` were rebuilt from images. Upload the original PDFs under the same names to replace them.
 
 ## Colors (in `styles.css`)
