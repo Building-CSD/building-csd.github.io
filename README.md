@@ -8,7 +8,7 @@ A single page made with plain HTML and CSS. There's no build step, so whatever y
 
 1. On GitHub, open `index.html` and click the pencil icon (Edit).
 2. Each section starts with a comment you can search for (Cmd/Ctrl+F):
-   `INTRO`, `EVENT BLOCK`, `ABOUT`, `WEEKLY MEDITATION`, `USE THE SPACE`, `GET INVOLVED`, `VISIT`.
+   `INTRO`, `EVENT BLOCK`, `ABOUT`, `VISION`, `SAMPLE WEEK`, `WEEKLY MEDITATION`, `USE THE SPACE`, `SUPPORT`, `GET INVOLVED`, `VISIT`.
 3. Change only the words between tags, such as `<p>` ... `</p>`. Leave the angle-bracket parts alone.
 4. Click **Commit changes**. The live site updates in about a minute.
 
@@ -30,7 +30,6 @@ Also update the event text in the `og:description` line near the top. That's the
 
 ## Optional later
 
-- Photos of the building: there's a spot marked in the About section.
 - The flier PDFs in `images/` were rebuilt from images. Upload the original PDFs under the same names to replace them.
 
 ## Colors (in `styles.css`)
