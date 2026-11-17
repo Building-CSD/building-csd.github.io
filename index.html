@@ -19,15 +19,16 @@
 
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preload" href="fonts/newsreader-400-italic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="preload" href="fonts/newsreader-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="wrap header-inner">
+<header class="bar">
+  <div class="wrap bar-inner">
+    <a class="mark" href="#top" aria-label="Back to top">&#10022;</a>
     <nav aria-label="Sections">
       <ul>
         <li><a href="#meditation">Meditation</a></li>
@@ -37,22 +38,37 @@
         <li><a href="#visit">Visit</a></li>
       </ul>
     </nav>
+    <a class="pill pill-dark pill-small" href="#event">Upcoming event</a>
   </div>
 </header>
 
 <main id="main">
 
   <!-- ===================== INTRO ===================== -->
-  <section class="intro" id="top">
-    <div class="wrap intro-grid">
-      <div>
-        <h1>Center for Spirituality and&nbsp;Dialogue</h1>
-        <p class="lede">An inclusive space near campus for meditation, prayer, reflection and real conversation across cultures, faiths and beliefs.</p>
-      </div>
-      <figure class="intro-photo">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <h1>Center for Spirituality and&nbsp;Dialogue</h1>
+      <p class="hero-lede">An inclusive space near campus for meditation, prayer, reflection and real conversation across cultures, faiths and beliefs.</p>
+      <p class="actions">
+        <a class="pill pill-dark" href="#event">See the upcoming event</a>
+        <a class="pill pill-light" href="#meditation">Weekly meditation</a>
+      </p>
+    </div>
+    <div class="wrap hero-photos">
+      <figure>
         <img src="images/entrance.jpg" width="782" height="516"
              alt="The front steps of 2601 Durant Avenue: a stucco gateway with the house number, an iron gate, and a columned entrance under a leafy tree.">
-        <figcaption>2601 Durant Avenue, one block from campus</figcaption>
+        <figcaption>2601 Durant Avenue</figcaption>
+      </figure>
+      <figure>
+        <img src="images/hall.jpg" width="804" height="530"
+             alt="The grand hall: a coffered ceiling, hanging lanterns, tall leaded windows and a fireplace, with a few wooden chairs gathered in a circle.">
+        <figcaption>The grand hall</figcaption>
+      </figure>
+      <figure>
+        <img src="images/window.jpg" width="403" height="539"
+             alt="Tall leaded-glass doors standing open onto a garden with pink bougainvillea, a worn cushioned stool in the corner.">
+        <figcaption>Doors to the garden</figcaption>
       </figure>
     </div>
   </section>
@@ -60,32 +76,36 @@
   <!-- =====================================================================
        EVENT BLOCK  ·  edit this section to change the featured event.
        To swap the event: change the title, date, time, description,
-       the RSVP link, and the flier image + PDF (put new files in /images).
+       and the flier image + PDF (put new files in /images).
        ===================================================================== -->
-  <section class="event" id="event" aria-labelledby="event-title">
-    <div class="wrap event-grid">
-
-      <figure class="event-flier">
-        <img src="images/sacred-flier.jpg" width="760" height="984"
-             alt="Event flier in warm gold and copper. Text: Center for Spirituality and Dialogue. Returning to the Sacred: A Reflective Journaling Workshop. December 8, 4 to 5:30 pm, 2601 Durant Ave, Berkeley, CA. What does the sacred mean to you? Facilitated by Bini Sebastian, PhD. Illustrations of hands writing in a journal beside lilies and a cup of coffee.">
-        <figcaption><a href="images/sacred-flier.pdf" download>Download the flier (PDF)</a></figcaption>
-      </figure>
-
-      <div class="event-text">
-        <p class="label">Upcoming event</p>
-        <h2 id="event-title">Returning to the Sacred: A Reflective Journaling Workshop</h2>
-
-        <p class="when">
-          <time datetime="2026-12-08T16:00">Tuesday, December 8</time><br>
-          4:00 to 5:30 PM at the Center
-        </p>
-
-        <p class="event-q">What does the sacred mean to you?</p>
-        <p>Through guided journaling, contemplative practices, and optional group discussion, we&rsquo;ll explore what brings us meaning, inspires awe, and grounds us amid the demands of student life.</p>
-        <p>Whether you&rsquo;re connected to a spiritual tradition or simply curious, come as you are and make space to explore what the sacred means to you. No particular belief system is required.</p>
-        <p class="small">Facilitated by Bini Sebastian, PhD</p>
+  <section class="section event" id="event" aria-labelledby="event-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="micro">Upcoming event</p>
       </div>
+      <div class="event-grid">
 
+        <figure class="event-flier">
+          <img src="images/sacred-flier.jpg" width="760" height="984"
+               alt="Event flier in warm gold and copper. Text: Center for Spirituality and Dialogue. Returning to the Sacred: A Reflective Journaling Workshop. December 8, 4 to 5:30 pm, 2601 Durant Ave, Berkeley, CA. What does the sacred mean to you? Facilitated by Bini Sebastian, PhD. Illustrations of hands writing in a journal beside lilies and a cup of coffee.">
+          <figcaption><a href="images/sacred-flier.pdf" download>Download the flier (PDF)</a></figcaption>
+        </figure>
+
+        <div class="event-text">
+          <h3 id="event-title">Returning to the Sacred: A Reflective Journaling Workshop</h3>
+
+          <p class="when">
+            <time datetime="2026-12-08T16:00">Tuesday, December 8</time><br>
+            4:00 to 5:30 PM at the Center
+          </p>
+
+          <p class="event-q">What does the sacred mean to you?</p>
+          <p>Through guided journaling, contemplative practices, and optional group discussion, we&rsquo;ll explore what brings us meaning, inspires awe, and grounds us amid the demands of student life.</p>
+          <p>Whether you&rsquo;re connected to a spiritual tradition or simply curious, come as you are and make space to explore what the sacred means to you. No particular belief system is required.</p>
+          <p class="small">Facilitated by Bini Sebastian, PhD</p>
+        </div>
+
+      </div>
     </div>
   </section>
   <!-- ===================== END EVENT BLOCK ===================== -->
@@ -93,40 +113,46 @@
 
   <!-- ===================== WEEKLY MEDITATION ===================== -->
   <section class="section green" id="meditation" aria-labelledby="meditation-title">
-    <div class="wrap prose">
-      <h2 id="meditation-title">Weekly meditation</h2>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="micro">Every week &middot; drop in</p>
+        <h2 id="meditation-title">Weekly meditation</h2>
+      </div>
 
       <div class="slots">
-      <div class="slot">
-        <h3>Thursdays, 12 to 1 PM</h3>
-        <p>Join us for guided meditations or use this time for self-guided meditation. This hour is hosted by Corey Dodson.</p>
-        <p class="contact">Questions: <a href="mailto:dodsoncorey92@berkeley.edu">dodsoncorey92@berkeley.edu</a></p>
-      </div>
+        <div class="slot">
+          <h3>Thursdays, 12 to 1 PM</h3>
+          <p>Join us for guided meditations or use this time for self-guided meditation. This hour is hosted by Corey Dodson.</p>
+          <p class="contact">Questions: <a href="mailto:dodsoncorey92@berkeley.edu">dodsoncorey92@berkeley.edu</a></p>
+        </div>
 
-      <div class="slot">
-        <h3>Fridays, 4 to 5 PM <span class="note">starting November 27</span></h3>
-        <p>Bring your meditation group and use the space to sit together. Dr. Peter Cornish hosts this drop-in hour.</p>
-        <p class="contact">Questions: <a href="mailto:pcornish@berkeley.edu">pcornish@berkeley.edu</a></p>
-      </div>
+        <div class="slot">
+          <h3>Fridays, 4 to 5 PM <span class="note">Starting November 27</span></h3>
+          <p>Bring your meditation group and use the space to sit together. Dr. Peter Cornish hosts this drop-in hour.</p>
+          <p class="contact">Questions: <a href="mailto:pcornish@berkeley.edu">pcornish@berkeley.edu</a></p>
+        </div>
       </div>
     </div>
   </section>
 
 
   <!-- ===================== GET INVOLVED ===================== -->
-  <section class="section parchment" id="get-involved" aria-labelledby="involved-title">
+  <section class="section" id="get-involved" aria-labelledby="involved-title">
     <div class="wrap">
-      <h2 id="involved-title">Get involved</h2>
-      <div class="involve">
+      <div class="section-head">
+        <p class="micro">For students and clubs</p>
+        <h2 id="involved-title">Get involved</h2>
+      </div>
+      <div class="split">
         <div>
           <h3>Help build the Center</h3>
           <p>Students decide what the Center becomes. Steward the space, shape how the building is used, plan programs or join a planning team.</p>
-          <p><a class="button" href="https://forms.gle/iDrbCPBEdirE1R6j8">Sign up to help</a></p>
+          <p><a class="pill pill-dark" href="https://forms.gle/iDrbCPBEdirE1R6j8">Sign up to help</a></p>
         </div>
         <div>
           <h3>Use the space</h3>
           <p>Student clubs can request the space for meditation, prayer gatherings, discussion or CSD-inspired events. Please ask at least 3 business days ahead.</p>
-          <p><a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSe7YsTtprSLQfB3BP--B3pYJUoGFYSM0brjkX2G5zih14-HTg/viewform?usp=dialog">Request the space</a></p>
+          <p><a class="pill pill-light" href="https://docs.google.com/forms/d/e/1FAIpQLSe7YsTtprSLQfB3BP--B3pYJUoGFYSM0brjkX2G5zih14-HTg/viewform?usp=dialog">Request the space</a></p>
         </div>
       </div>
     </div>
@@ -134,34 +160,28 @@
 
 
   <!-- ===================== ABOUT ===================== -->
-  <section class="section" id="about" aria-labelledby="about-title">
-    <div class="wrap two-col">
-      <div class="prose">
-        <h2 id="about-title">About the Center</h2>
-        <p>Students of every background, whether or not they follow a tradition, have a place here to slow down, connect and understand one another more deeply. It is a safe space where students can pursue whatever they wish.</p>
-        <p>The Center is in a historic building one block from campus, used for spiritual study and prayer since the 1930s. Film screenings, talks and dialogue circles, co-hosted with clubs, are also planned.</p>
-        <p><a class="more" href="vision.html">Read our vision and plans for the building &rarr;</a></p>
-      </div>
-      <figure class="photo">
-        <img src="images/hall.jpg" width="804" height="530" loading="lazy"
-             alt="The grand hall: a coffered ceiling, hanging lanterns, tall leaded windows and a fireplace, with a few wooden chairs gathered in a circle.">
-      </figure>
+  <section class="section center" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <p class="micro" id="about-title">About the Center</p>
+      <p class="statement">Students decide what the Center becomes, and we are literally building it.</p>
+      <p class="about-text">Students of every background, whether or not they follow a tradition, have a place here to slow down, connect and understand one another more deeply. The Center is in a historic building one block from campus, used for spiritual study and prayer since the 1930s. Film screenings, talks and dialogue circles, co-hosted with clubs, are also planned.</p>
+      <p class="actions center"><a class="pill pill-light" href="vision.html">Read our vision &rarr;</a></p>
     </div>
   </section>
 
 
   <!-- ===================== VISIT ===================== -->
-  <section class="section" id="visit" aria-labelledby="visit-title">
-    <div class="wrap prose">
-      <h2 id="visit-title">Visit</h2>
+  <section class="section center" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <p class="micro">Visit</p>
+      <h2 id="visit-title" class="visually-hidden">Visit</h2>
       <address>
         2601 Durant Avenue<br>
         Berkeley, CA 94704<br>
         <span class="small">Corner of Durant and Bowditch</span>
       </address>
-      <p><a href="https://www.google.com/maps/place/Center+for+Spirituality+and+Dialogue+%7C+CSD/@37.8683901,-122.2565818,979m/data=!3m1!1e3!4m15!1m8!3m7!1s0x80857c2fa190d5d1:0x5bd534ed75fe6dee!2s2601+Durant+Ave,+Berkeley,+CA+94704!3b1!8m2!3d37.8683901!4d-122.2565818!16s%2Fg%2F11b8zf1wqk!3m5!1s0x80857d32d6e58b9b:0x38f5d8ae71e7ced2!8m2!3d37.8683901!4d-122.2565818!16s%2Fg%2F11_051hhqd">Open in Google Maps</a></p>
-
-      <p>For now the Center is open during <a href="#meditation">weekly meditation</a> and events.</p>
+      <p class="actions center"><a class="pill pill-dark" href="https://www.google.com/maps/place/Center+for+Spirituality+and+Dialogue+%7C+CSD/@37.8683901,-122.2565818,979m/data=!3m1!1e3!4m15!1m8!3m7!1s0x80857c2fa190d5d1:0x5bd534ed75fe6dee!2s2601+Durant+Ave,+Berkeley,+CA+94704!3b1!8m2!3d37.8683901!4d-122.2565818!16s%2Fg%2F11b8zf1wqk!3m5!1s0x80857d32d6e58b9b:0x38f5d8ae71e7ced2!8m2!3d37.8683901!4d-122.2565818!16s%2Fg%2F11_051hhqd">Open in Google Maps</a></p>
+      <p class="small">For now the Center is open during <a href="#meditation">weekly meditation</a> and events.</p>
     </div>
   </section>
 
@@ -169,6 +189,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
+    <span class="mark" aria-hidden="true">&#10022;</span>
     <p>2601 Durant Avenue, Berkeley, CA<br>
        <a href="mailto:building.for.csd@gmail.com">building.for.csd@gmail.com</a></p>
     <p class="small">A student-led space near campus. The Center is not an official unit of UC Berkeley.</p>
