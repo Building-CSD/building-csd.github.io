@@ -222,3 +222,5 @@ address .small { font-family: var(--sans); }
 
 /* focus ring on dark green and ink backgrounds */
 .site-header :focus-visible, .intro :focus-visible, .green :focus-visible, .site-footer :focus-visible { outline-color: var(--on-green); }
+
+.event-q { font-family: var(--serif); font-style: italic; font-size: 1.3rem; margin-bottom: 0.5rem; }

@@ -18,12 +18,12 @@ A single page made with plain HTML and CSS. There's no build step, so whatever y
 Everything for the event sits between `EVENT BLOCK` and `END EVENT BLOCK` in `index.html`:
 
 - **Title:** the `<h2 id="event-title">` line
-- **Date and time:** the `<p class="when">` lines. Also update `datetime="2026-11-15T15:00"` (year-month-dayThour:minute).
+- **Date and time:** the `<p class="when">` lines. Also update `datetime="2026-12-08T16:00"` (year-month-dayThour:minute).
 - **Description:** the paragraph below the date
 - **RSVP link:** the `href="..."` on the "RSVP" button
 - **Flier:**
   1. Upload the new image and PDF into the `images` folder (Add file, then Upload files).
-  2. Change `images/peace-flier.jpg` and `images/peace-flier.pdf` to the new file names.
+  2. Change `images/sacred-flier.jpg` and `images/sacred-flier.pdf` to the new file names.
   3. Rewrite the `alt="..."` text so it describes the new flier. Screen-reader users hear this text in place of the image.
   4. Keep flier images under about 200 KB. A JPG about 760 px wide works well.
 
